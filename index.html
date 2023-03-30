@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-9" />
-    <meta name="description" content="You can calculate the area of a trapezoid using this website" />
+    <meta
+      name="description"
+      content="You can calculate the area of a trapezoid using this website"
+    />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Mohamad" />
     <meta name="viewport" conent="width=device-width, initial-scale=1.0" />
@@ -52,11 +55,19 @@
       <main class="mdl-layout__content">
         <div class="page-content">
           <!--Donut picture-->
-          <img src="./images/donut.jpg" alt="Donut" class="donut" />
+          <img src="./images/Donut.png" alt="Donut" class="donut" />
           <!--Text below header-->
-          <div class="page-content">Enter values to calculate net pay</div>
+          <div class="page-content-top">
+            Formula <br />
+            A = [(a+b)/2] h
+          </div>
+          <br />
+          <div class="page-content-top">
+            Enter values to calculate area of a trapezoid
+          </div>
           <!-- Numeric Textfield with Floating Label -->
           <form action="#">
+            A base
             <div
               class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
             >
@@ -64,16 +75,16 @@
                 class="mdl-textfield__input"
                 type="text"
                 pattern="-?[0-9]*(\.[0-9]+)?"
-                id="hourly-wage"
+                id="a-base"
               />
-              <label class="mdl-textfield__label" for="hourly-wage"
-                >Hourly salary...</label
-              >
+              <label class="mdl-textfield__label" for="a-base">A base...</label>
               <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
+            mm
           </form>
           <!-- Numeric Textfield with Floating Label -->
           <form action="#">
+            B base
             <div
               class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
             >
@@ -81,13 +92,29 @@
                 class="mdl-textfield__input"
                 type="text"
                 pattern="-?[0-9]*(\.[0-9]+)?"
-                id="hours-worked"
+                id="b-base"
               />
-              <label class="mdl-textfield__label" for="hours-worked"
-                >Hours worked...</label
-              >
+              <label class="mdl-textfield__label" for="b-base">B base...</label>
               <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
+            mm
+          </form>
+          <!-- Numeric Textfield with Floating Label -->
+          <form action="#">
+            Height
+            <div
+              class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+            >
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                pattern="-?[0-9]*(\.[0-9]+)?"
+                id="height"
+              />
+              <label class="mdl-textfield__label" for="height">Height...</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+            mm
           </form>
           <!-- Accent-colored raised button with ripple -->
           <button
@@ -106,4 +133,3 @@
     </div>
   </body>
 </html>
-

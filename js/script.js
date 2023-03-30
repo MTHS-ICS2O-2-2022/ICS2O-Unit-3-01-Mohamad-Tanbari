@@ -7,4 +7,18 @@
 /*
 * This function 
 */
-function calculate () {}
+function calculate () {
+  // debugging statements
+  console.log('button clicked')
+
+  // grab input from the text box
+  const aBase = parseInt(document.getElementById('a-base').value)
+  const bBase = parseInt(document.getElementById('b-base').value)
+  const height = parseInt(document.getElementById('height').value)
+
+  // calculate the area
+  const area = (aBase + bBase) / 2 * height
+
+  // output the area
+  document.getElementById('answer').innerHTML = "The area of the Trapezoid is: " + area + " cm²"
+}

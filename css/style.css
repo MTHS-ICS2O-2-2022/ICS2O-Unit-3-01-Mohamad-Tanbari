@@ -4,10 +4,14 @@
 */
 
 .page-content {
-  padding: 5px;
+  padding: 25px;
 }
 
 .donut {
   float: right;
-  width: 300px;
+  width: 550px;
+}
+
+.page-content-top {
+  font-size: larger;
 }
